@@ -1,0 +1,16 @@
+eHealth
+DAtenbanken
+BVV 3.0
+Qualitätsmanagement
+Medizinische Prozesse
+
+WPF: 4 Stück:
+
+
+
+Moderne Software Techniken (MST)
+Fortgeschrittene KommunikationsSysteme (FKS)
+Hardware Software Co-Design
+Supply Chain Management (SCM) // Geschäftsprozessoptimierung (GPO)
+Spezielle Algorithmen (SAL)
+Fortgeschrittene ProduktionsPlanung (FPP)
