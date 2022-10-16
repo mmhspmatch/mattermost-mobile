@@ -1,0 +1,7 @@
+w=w-((w*w-x)/(2*w));
+
+multiplicator=w*w
+dividend=multiplicator-x
+divisor=2*w
+minuend=(dividend/divisor)
+w=w-minuend;

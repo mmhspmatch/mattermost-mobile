@@ -1,0 +1,41 @@
+Fragenkatalog Digital Health Übung 1
+Ausgearbeitete Fragen der eigenen Gruppe mit Antworten der zweiten Gruppe: 
+Erklären Sie kurz den Begriff eCare und nennen Sie 5 Bereiche der Medizin in denen eCare eingesetzt werden kann
+A: eCare ist der Einsatz von E-Health Anwendungen in der unmittelbaren medizinischen Versorgung. Weitere Bestandteile von eHealth sind eAdministration, eResearch, ePrevention, eLearning und ePublicHealth.
+ 
+Was ist “Patient Empowerment” und was sind die Vor- und Nachteile dabei?
+A: Dem Patienten mehr Informationen und Verantwortung geben. Vorteil ist ein besserer Outcome, Nachteil ist eine evtl. Überforderung des Patienten.
+ 
+Nennen Sie die 6 Teilbereiche von eHealth und nennen Sie dazu jeweils ein Beispiel.
+A: eHealth besteht aus eAdministration (Elektronische Arbeitsunfähigkeitsbesch.), eCare (Telemonitoring), eResearch (Secondary use), ePrevention (Ambient Assis. Living), eLearning (Weiterbildung) und ePublicHealth (Meldung von Infektionskrankheiten).
+ 
+Was für Probleme entstehen beim Datenschutz bei “Secondary Use” von Patientendaten? Wie kann die Medizinische Informatik in diesem Bereich unterstützen?
+A: Die medizinische Informatik kann bei der Anonymisierung der Patientendaten unterstützen, es kann beispielsweise durch Record Linkage verbessert werden.
+ 
+Sie werden als Informatiker in eine Klinik bestellt, um die Krankenschwestern bei der Tablettenvergabe zu unterstützen. Dabei soll jedes Krankenbett ein Tablet erhalten, das am Fußende des Bettes angebracht wird. Es soll möglich sein, dass die medizinisch notwendigen Daten des Patienten, einschließlich der Medikamentenliste, auf dem Tablet angezeigt werden. 
+Beschreiben Sie ihr Herangehen für die richtige Vorgehensweise und gehen Sie dabei auch auf mögliche Probleme mit dem Datenschutz ein. 
+ 
+A: Problem ist eine verbesserungsbedürftige Verfügbarkeit von Patientendaten am Krankenbett. Diese soll durh das Projekt verbessert werden. Die Prozesse des Gesundheitswesens müssen dabei berücksichtigt werden. Die Patientendaten dürfen nicht für jeden zugänglich sein, daher ist beispielsweise ein Passowortschutz notwendig.
+ 
+
+ 
+Ausgearbeitete Fragen der zweiten Gruppe mit Antworten der eigenen Gruppe:
+1.     Ein Freund entwickelt gerade aus eigener Motivation eine Digital Health App und fragt Sie um Rat. Seine Anwendung unterstützt alle vorgegebenen Schnittstellen und Datenschutzrichtlinien. Nächste Woche möchte er seine App einer Krankenkasse vorstellen. Begründen Sie warum diese Vorgehensweise falsch ist und beschreiben Sie, wie man bei der Entwicklung eines Digital Health Projekts vorgehen sollte.
+·        falsche Vorgehensweise, da eine Lösung entwickelt wird, ohne das Problem zu kennen 
+·        es muss ein Versorgungsziel bekannt sein, bevor die Entwicklung gestartet wird
+·        Anwender des fertigen Produkts müssen miteinbezogen werden und die darauf basierenden Prozesse des Gesundheitswesens müssen berücksichtigt werden
+·        es muss eine Stakeholderanalyse durchgeführt werden und der für die Zielgruppe medizinische Nutzen verständlich herausgearbeitet werden
+ 
+2.     In welchem Kontext ist eHealth verortet? Nennen Sie drei Bereiche.
+·        Gesundheit, Medizin, Patientenversorgung
+ 
+3.     Nennen Sie den Unterschied zwischen telemedizinischer Versorgung und Telemonitoring.
+·        telemed. Versorgung: geeignete medizinische Maßnahmen nicht vor Ort verfügbar
+·        Telemonitoring: nicht zur richtigen Zeit verfügbar
+ 
+4.     Was versteht man unter "Secondary use" von Patientendaten im Kontext von eResearch?
+·        Verwendung von Patientendaten in medizinische Studien
+ 
+5.     Erklären Sie den Begriff "Patient Empowerment".
+·        dem Patienten werden mehr Informationen und Verantwortung gegeben und er wird besser und aktiver in seine Betreuung und Therapie miteinbezogen
+ 
