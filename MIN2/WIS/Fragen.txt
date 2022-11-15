@@ -1,0 +1,6 @@
+Fragen:
+- how exactly can ANN map complicated systems with no prior understanding of them?(page 26) doesn't it require training with "similar" problems first to udnerstand wht
+it is supposed to do?
+- what exactly is the purpose of this paper? It just mentions different studies and shortly explains them, grants more of an overview
+	/where exactly would my part come in? explaining the basics of neural networks so it becomes understandable? kind of weird because a lot of the terms aren't really new because of BVV
+- what exactly are polygons and polygon attributes?(p.25) "it must be easy to produce image statistics within polygons" I could see that it's polygons because of terrestrial maps but where is the connection there
