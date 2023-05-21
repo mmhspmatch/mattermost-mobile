@@ -135,8 +135,10 @@ commands:
       - run:
           name: Getting cocoapods dependencies
           command: |
+            cd ios/Mattermost.xcodeproj/
+            ls
             pod update Rudder
-            echo after pod update Rudder
+            echo after pod updat
             npm run pod-install
       - save_cache:
           name: Save cocoapods specs and pods cache
