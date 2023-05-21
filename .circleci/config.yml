@@ -134,7 +134,10 @@ commands:
           command: npm run ios-gems
       - run:
           name: Getting cocoapods dependencies
-          command: pod cache clean --all && npm run pod-install
+          command: |
+            pod cache clean --all
+            echo after pod cache clean
+            npm run pod-install
       - save_cache:
           name: Save cocoapods specs and pods cache
           key: v2-cocoapods-{{ checksum "ios/Podfile.lock" }}-{{ arch }}
