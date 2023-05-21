@@ -135,8 +135,8 @@ commands:
       - run:
           name: Getting cocoapods dependencies
           command: |
-            pod cache clean --all
-            echo after pod cache clean
+            pod update Rudder
+            echo after pod update Rudder
             npm run pod-install
       - save_cache:
           name: Save cocoapods specs and pods cache
