@@ -128,7 +128,7 @@ commands:
     steps:
       - restore_cache:
           name: Restore cocoapods specs and pods
-          key: v1-cocoapods-{{ checksum "ios/Podfile.lock" }}-{{ arch }}
+          key: v1-cocoapods-{{ checksum "package.json" }}-{{ arch }}
       - run:
           name: iOS gems
           command: npm run ios-gems
