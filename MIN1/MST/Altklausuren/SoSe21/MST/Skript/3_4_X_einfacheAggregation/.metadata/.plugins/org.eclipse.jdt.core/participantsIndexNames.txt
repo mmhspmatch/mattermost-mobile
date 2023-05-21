@@ -1,3 +1,0 @@
-INDEX VERSION 1.131
-D:\maventests\multifromscratch\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3422159709.index
-\simple-webapp\src\main\java

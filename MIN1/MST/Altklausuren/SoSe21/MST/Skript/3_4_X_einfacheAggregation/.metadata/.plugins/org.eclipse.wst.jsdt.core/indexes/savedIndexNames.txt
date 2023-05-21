@@ -1,7 +1,0 @@
-INDEX VERSION 1.4+D:\maventests\multifromscratch\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-332619694.index
-1217411204.index
-3647863928.index
-2666446628.index
-1867181089.index
-2341976777.index
