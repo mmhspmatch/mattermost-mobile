@@ -44,8 +44,8 @@ To set up the Mattermost Push Proxy, perform the following actions:
 2. Configuration:
     - Android: Set the Android Firebase API Key (provided by Regina Griesbeck, safely stored in 1Password).
     - Apple:
-        - Generate an Apple Push Notification certificate according to this guide: https://developers.mattermost.com/contribute/more-info/mobile/push-notifications/ios/
-        - Use that certificate to generate a pem file according to this guide: https://developers.mattermost.com/contribute/more-info/mobile/push-notifications/service/
+        - Generate an Apple Push Notification certificate according to this guide: [https://developers.mattermost.com/contribute/more-info/mobile/push-notifications/ios/](https://developers.mattermost.com/contribute/more-info/mobile/push-notifications/ios/)
+        - Use that certificate to generate a pem file according to this guide: [https://developers.mattermost.com/contribute/more-info/mobile/push-notifications/service/](https://developers.mattermost.com/contribute/more-info/mobile/push-notifications/service/)
         - Modify the `"ApplePushTopic"` value in `/docker/volumes/docker_mattermost-push/_data/mattermost-push-proxy.json` to `"de.othregensburg.mattermost"`
         - Set the correct path to the pem-file in the same json-file
 3. Configure the Mattermost Server to enable and send push notifications:
@@ -55,9 +55,9 @@ To set up the Mattermost Push Proxy, perform the following actions:
     - Optional: Customize the content of push notifications in System Console -> Notifications
 
 ## Licenses
-- Since the original Mattermost project is using the Apache License Version 2.0, this project will do so as well. This means that significant changes to the original are being documented. The original NOTICE.txt file is also being included which documents a list of open source components used in Mattermost Mobile, including those that have been modified. As there are no major changes apart from minor settings and adding environment variables, the NOTICE file will remain unchanged and all changes to the original Mattermost Mobile will be documented in this readme.
-- The LICENSE.txt file is being adapted to include a copyright notice according to this question: https://opensource.stackexchange.com/questions/7300/copyright-notice-in-the-file-header-apache-v2-license. As such, a "Copyright Ostbayerische Techniche Hochschule Regensburg 2023. All rights reserved. Based on Mattermost mobile project (Copyright 2015-present Mattermost, Inc.)" is being added at the start of the file:
-sed -i 's/Copyright 2015-present Mattermost, Inc./Copyright Ostbayerische Techniche Hochschule Regensburg 2023. All rights reserved.\n\nBased on Mattermost mobile project (Copyright 2015-present Mattermost, Inc.)/' ./LICENSE.txt
+- Since the original Mattermost project is using the Apache License Version 2.0, this project will do so as well. This means that significant changes to the original are being documented. The original `NOTICE.txt` file is also being included which documents a list of open source components used in Mattermost Mobile, including those that have been modified. As there are no major changes apart from minor settings and adding environment variables, the `NOTICE.txt` file will remain unchanged and all changes to the original Mattermost Mobile will be documented in the `README` files.
+- The `LICENSE.txt` file is being adapted to include a copyright notice according to [this question](https://opensource.stackexchange.com/questions/7300/copyright-notice-in-the-file-header-apache-v2-license). As such, a "Copyright Ostbayerische Techniche Hochschule Regensburg 2023. All rights reserved. Based on Mattermost Mobile project (Copyright 2015-present Mattermost, Inc.)" is being added at the start of the file:
+sed -i 's/Copyright 2015-present Mattermost, Inc./Copyright Ostbayerische Techniche Hochschule Regensburg 2023. All rights reserved.\n\nBased on Mattermost Mobile project (Copyright 2015-present Mattermost, Inc.)/' ./LICENSE.txt
 
 
 ## TODO

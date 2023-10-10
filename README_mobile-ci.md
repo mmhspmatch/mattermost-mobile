@@ -53,7 +53,7 @@ To start the initial configuration, follow these steps to create the keystore fi
     - The account for CircleCI is the same account you use for GitHub (Use the "Login via GitHub" option offered in CircleCI)
     - Enable 3rd Party Orbs in CircleCI: Go to Organization Settings -> Security -> Orb Security Settings.
     - Ensure that the tests are passing successfully at this stage.
-    - Add a user key to the CircleCI project to allow it to access the certificate repository: https://circleci.com/docs/ios-codesigning/#adding-a-user-key-to-the-circleci-project
+    - Add a user key to the CircleCI project to allow it to access the certificate repository: [https://circleci.com/docs/ios-codesigning/#adding-a-user-key-to-the-circleci-project](https://circleci.com/docs/ios-codesigning/#adding-a-user-key-to-the-circleci-project)
     -  Set project environment variables in CircleCI:
         - BASE_64_KEYSTORE = Base64 string of the keystore created earlier.
         - GOOGLE_PLAY_KEY = contents of the file received from Regina Griesbeck, the current owner of the Google Developer Account.
@@ -73,11 +73,10 @@ To start the initial configuration, follow these steps to create the keystore fi
             WWdvRHUzSktjdGFBaApucC9UUGdlZXYvZVNWY21oQXE3K2RiVTZuMjhUS2N0WTFp
             OEJ4ZllLNVpQc2taMkw0NWtReU5NbFQ5N3cwd0FrClkwcTQ4MXJ0Ci0tLS0tRU5E
             IFBSSVZBVEUgS0VZLS0tLS0=
-
-        - FASTLANE_PASSWORD: nh8obPZb4meZ3VgsyTsp Your App Store Connect / Apple Developer Portal password
-        - MATCH_PASSWORD: nh8obPZb4meZ3VgsyTsp  Encryption password for the certificates
-        - MATCH_USERNAME: mm-service@rchst.de   Account that generated the certificates
-        - MATCH_GIT_BASIC_AUTHORIZATION in base64: hidden, github won't show it to you more than once. To generate a new one if needed: Follow the instructions at https://docs.fastlane.tools/actions/match/ (section 'Git Storage on GitHub')
+        - FASTLANE_PASSWORD: nh8obPZb4meZ3VgsyTsp (Your App Store Connect / Apple Developer Portal password)
+        - MATCH_PASSWORD: nh8obPZb4meZ3VgsyTsp  (Encryption password for the certificates)
+        - MATCH_USERNAME: mm-service@rchst.de   (Account that generated the certificates)
+        - MATCH_GIT_BASIC_AUTHORIZATION in base64: hidden, github won't show it to you more than once. To generate a new one if needed: Follow the instructions at [https://docs.fastlane.tools/actions/match/](https://docs.fastlane.tools/actions/match/) (section 'Git Storage on GitHub')
 
 ## App und Build Configuration
 The remaining configuration of the app and the build process is handled through environment variables in the `fastlane/.env` file. The following variables are currently used for configuration, build, and automatic release of the Android app:
@@ -121,8 +120,8 @@ type("appstore")
 
 - Match is being used to automatically generate, renew and manage the provisioning profiles and the certificates. See [the documentation](https://docs.fastlane.tools/actions/match/) for more details. 
 
-- Certificates and profiles are being hosted on github at a private repository in https://github.com/othrchst/mmfastlane. In regards to whether or not this is secure:
-"An App Store profile can't be used for anything as long as it's not re-signed by Apple. The only way to get an app resigned is to submit an app for review which could take anywhere from 24 hours to a few days (checkout appreviewtimes.com for up-to-date expectations). Attackers could only submit an app for review, if they also got access to your App Store Connect credentials (which are not stored in git, but in your local keychain). Additionally you get an email notification every time a build gets uploaded to cancel the submission even before your app gets into the review stage." Source: https://docs.fastlane.tools/actions/match/#is-this-secure
+- Certificates and profiles are being hosted on github at a private repository in [https://github.com/othrchst/mmfastlane](https://github.com/othrchst/mmfastlane). In regards to whether or not this is secure:
+"An App Store profile can't be used for anything as long as it's not re-signed by Apple. The only way to get an app resigned is to submit an app for review which could take anywhere from 24 hours to a few days (checkout appreviewtimes.com for up-to-date expectations). Attackers could only submit an app for review, if they also got access to your App Store Connect credentials (which are not stored in git, but in your local keychain). Additionally you get an email notification every time a build gets uploaded to cancel the submission even before your app gets into the review stage." Source: [https://docs.fastlane.tools/actions/match/#is-this-secure](https://docs.fastlane.tools/actions/match/#is-this-secure)
 - the "Country" field in the certificates is set to US for some unknown reason (the account that created them is set to Germany), this should not matter according to Apple support: https://developer.apple.com/forums/thread/84111, https://developer.apple.com/forums/thread/12543
 
 - Since the Mattermost Team has moved away from CircleCI starting with version 2.5 onwards, the corresponding `config.yml` is not being updated anymore and thus some things have to be taken into account. If there happens to be a complete overhaul to the project, the `config.yml` might not work anymore. Some version specifiers (like the XCode version to be uses for the Apple build) have to be specified manually, especially when a version is declared as deprecated, as it won't be allowed on the App Store otherwise. Sed commands are being used for this but it can also be done manually.
@@ -147,12 +146,16 @@ sed -i '/ios:/,/resource_class:/ s/default: medium/default: macos.m1.medium.gen1
 
 ## App Store Settings:
 - Key words that dictate search results in the App Store are set to: Mattermost, Messaging, Open-Source, OTH, Ostbayerische Technische Hochschule Regensburg
-- Datenschutz-URL: https://rchst.de/mattermost-mobile-privacy-policy/ 
-- For the support-url we chose to use the official mattermost mobile reference: https://github.com/mattermost/mattermost-mobile/issues
-- For the App Privacy we specified which data is being used similarly to the original Mattermost App Store page, that being Identifiers, Usage Data and Diagnostics not being linked to the user's identity: https://apps.apple.com/us/app/mattermost/id1257222717
+- Datenschutz-URL: [https://rchst.de/mattermost-mobile-privacy-policy/](https://rchst.de/mattermost-mobile-privacy-policy/)
+- For the support-url we chose to use the official mattermost mobile reference: [https://github.com/mattermost/mattermost-mobile/issues](https://github.com/mattermost/mattermost-mobile/issues)
+- For the App Privacy we specified how data is being used similarly to the [original Mattermost App Store page](https://apps.apple.com/us/app/mattermost/id1257222717), that being Identifiers, Usage Data and Diagnostics not being linked to the user's identity.
 
 
 ## Noteworthy external documentation:
-- Appfile: https://docs.fastlane.tools/advanced/Appfile/
-- Match: https://docs.fastlane.tools/actions/match/
-- More practical setup of match: https://medium.com/revelo-tech/setting-up-automatic-ios-release-with-fastlane-and-match-on-ci-cd-server-16c3f1d79bc5
+- Appfile: [https://docs.fastlane.tools/advanced/Appfile/](https://docs.fastlane.tools/advanced/Appfile/)
+- Match: [https://docs.fastlane.tools/actions/match/](https://docs.fastlane.tools/actions/match/)
+- More practical setup of match: [https://medium.com/revelo-tech/setting-up-automatic-ios-release-with-fastlane-and-match-on-ci-cd-server-16c3f1d79bc5](https://medium.com/revelo-tech/setting-up-automatic-ios-release-with-fastlane-and-match-on-ci-cd-server-16c3f1d79bc5)
+
+
+## ToDo:
+- [ ] update folder structure with appfile and matchfile
